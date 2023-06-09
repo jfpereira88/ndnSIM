@@ -170,12 +170,12 @@ def build(bld):
         bld.env['MODULES_NOT_BUILT'].append('ndnSIM')
         return
 
-    module_dirs = ['apps', 'helper', 'model', 'utils', 'bindings']
+    module_dirs = ['apps', 'helper', 'model', 'utils', 'bindings', 'vndn-sync']
     module.source = bld.path.ant_glob(['%s/**/*.cpp' % dir for dir in module_dirs],
-                                      excl=[
+                                      excl=['vndn-sync/examples/*',
                                           'model/ip-faces/*']) + ndnCxxSrc + nfdSrc
 
-    module_dirs = ['NFD/core', 'NFD/daemon', 'apps', 'helper', 'model', 'utils', 'bindings']
+    module_dirs = ['NFD/core', 'NFD/daemon', 'apps', 'helper', 'model', 'utils', 'bindings', 'vndn-sync']
     module.full_headers = bld.path.ant_glob(['%s/**/*.hpp' % dir for dir in module_dirs])
     module.full_headers += bld.path.ant_glob('NFD/common.hpp')
 
