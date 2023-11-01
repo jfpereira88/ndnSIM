@@ -7,12 +7,6 @@ docs/doxygen.warnings.log
 docs/introspected-doxygen.hpp
 docs/ndnSIM.tag
 vndn-sync
-ndnSIM-vndn-sync.cflags
-ndnSIM-vndn-sync.config
-ndnSIM-vndn-sync.creator
-ndnSIM-vndn-sync.cxxflags
-ndnSIM-vndn-sync.files
-ndnSIM-vndn-sync.includes
-ndnSIM-vndn-sync.creator.user
+ndnSIM-vndn-sync.*
 .qtc_clangd/
 
