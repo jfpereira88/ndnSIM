@@ -173,6 +173,7 @@ def build(bld):
     module_dirs = ['apps', 'helper', 'model', 'utils', 'bindings', 'vndn-sync']
     module.source = bld.path.ant_glob(['%s/**/*.cpp' % dir for dir in module_dirs],
                                       excl=['vndn-sync/examples/*',
+                                            'vndn-sync/scripts/*',
                                           'model/ip-faces/*']) + ndnCxxSrc + nfdSrc
 
     module_dirs = ['NFD/core', 'NFD/daemon', 'apps', 'helper', 'model', 'utils', 'bindings', 'vndn-sync']
